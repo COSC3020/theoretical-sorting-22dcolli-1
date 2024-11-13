@@ -26,6 +26,8 @@ otherwise. I am aware that plagiarism carries severe penalties and that if plagi
 suspected, charges may be filed against me without prior notice.”
 
 ## Note
-I am attempting this from scratch, I will compare it to my last semesters repository and make any corrections needed based on that code and response.
+I did not complete this excersise last semester, so I am attempting this completely from scratch. I did discuss this partially with Lily Brongo and then referenced Ishita Patel's repository from last semester to confirm my logic before submission.
 
 ## Answer
+
+I think that the best way to verify the claim is to test the algorithm as extensively as possible. Under the assumption that this is a black-box implementation, in order to test we would simply feed the algorithm many data sets of differing values and sizes in order to try an observe the algorithms behavior. The size of the varying data sets would not matter, as long as there are many possible sets tested, which should include small sets,large sets, and of course many unique cases and edge cases. We include the edge cases to more accuratley observe the algorithm's behavior in them. The algorithm claims to be able to sort in $\Theta(n)$ time, which means that with testing, we should be able to observe an increase in sorting time with the size of the data set. In essence, there should be direct coralation between data set size and sort time, with shorter data sets having a proportionaly shorter sort time and larger data sets having a proportionaly longer sort time. With enough testing, eventually we should be able to see the algorithms behavior clearly. There is an issue however, which comes from the statement that the algorithm is based on the comparisons of two elements at a time. Using slide 45 from the class lectures, we can see that the complexity of any comparison based sorting algorithm can't be better than $\Theta(nlog_n)$
